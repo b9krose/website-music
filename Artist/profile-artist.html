@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Copatible" content="ie=edge" />
+    <title>Profile Artist</title>
+    <link rel="stylesheet" href="css/profile-artist.css">
+  </head>
+  <body>
+
+    <div class="bg-profile">
+      <img src="img/pro.jpg" alt="cover" class="profile-img" >
+      <div class="profile-left">
+        <h1 class="name-artist"> Name Artist</h1>
+        <p class="caption"> This is just for test </p>
+        <div class="btn">
+          <a class="btn-like"><i onclick="like(this)" class="fas fa-heart-broken">  like</i></a>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+    function like(x) {
+     x.classList.toggle("fa-thumbs-up" );
+      }
+    </script>
+  </body>
+</html>

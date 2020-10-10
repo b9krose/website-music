@@ -1,0 +1,135 @@
+@media (max-width: 600px) {
+   section {
+     -webkit-flex-direction: column;
+     flex-direction: column;
+   }
+ }
+
+ /*--------------*/
+ /* ==========================================================================
+    #INPUT
+    ========================================================================== */
+ input[type=text], input[type=email] {
+   outline: none;
+   margin: 0;
+   border: none;
+   -webkit-box-shadow: none;
+   -moz-box-shadow: none;
+   box-shadow: none;
+   width: 100%;
+   font-size: 14px;
+   font-family: inherit;
+ }
+
+ .input-group-contact {
+   position: relative;
+   margin-bottom: 33px;
+   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+ }
+
+ .input-contact{
+   padding: 5px 0;
+   font-size: 16px;
+   color: #ccc;
+   background: transparent;
+ }
+ .modal-content-contact {
+  background: #000;
+  background: #ff0000;
+  background: -webkit-linear-gradient(-65deg, #000, #ff0000,#000);
+  background: linear-gradient(-65deg, #000, #ff0000,#000);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+   margin: 5% auto 15% auto;
+   border: 2px solid #fff;
+   width: 60%;
+   border-top-left-radius: 8px;
+   border-top-right-radius: 8px;
+   border-bottom-left-radius: 8px;
+   border-bottom-right-radius: 8px;
+ }
+ .container-modal-contact {
+   padding: 16px;
+ }
+
+
+ /* ==========================================================================
+    #TITLE
+    ========================================================================== */
+ .title-contact {
+   font-size: 34px;
+   color: #fff;
+   font-weight: 400;
+   margin-bottom: 36px;
+   margin-top: 36px;
+   text-align: center;
+ }
+
+ /* ==========================================================================
+    #BUTTON
+    ========================================================================== */
+ .btn {
+   width: auto;
+   display: inline-block;
+   line-height: 40px;
+   padding: 0 33px;
+   font-family: Poppins, Arial, "Helvetica Neue", sans-serif;
+   cursor: pointer;
+   color: #fff;
+   -webkit-transition: all 0.4s ease;
+   -o-transition: all 0.4s ease;
+   -moz-transition: all 0.4s ease;
+   transition: all 0.4s ease;
+   font-size: 18px;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+ }
+ .btn:hover {
+   color: #000
+ }
+ .btn-black {
+   background: #000 ;
+ }
+
+ .btn-black:hover {
+   background: #ccc;
+ }
+
+
+
+ .container-modal-contact {
+   padding: 16px;
+ }
+
+ .animate {
+   -webkit-animation: animatezoom 0.6s;
+   animation: animatezoom 0.6s
+ }
+
+ @-webkit-keyframes animatezoom {
+   from {-webkit-transform: scale(0)}
+   to {-webkit-transform: scale(1)}
+ }
+
+ @keyframes animatezoom {
+   from {transform: scale(0)}
+   to {transform: scale(1)}
+ }
+
+ @media screen and (max-width: 300px) {
+   span.psw {
+      display: block;
+      float: none;
+   }
+   .cancelbtn ,
+   .btn{
+     width: 100%;
+   }
+ }
+   @media (max-width: 700px) {
+   .modal-content {
+    width: 80%;
+   }
+ }

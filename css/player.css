@@ -1,0 +1,148 @@
+body{
+  font-family: 'Arial Black';
+  background: #000;
+}
+
+  .bg-song{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50vh;
+  }
+  .header-m{
+    color: #000;
+    padding: 40px;
+    padding-right:40px;
+    font-size: 2.25rem;
+    text-align: center;
+    margin-bottom: 10px;
+    background: #000000;
+    background: #ff0000;
+    background: -webkit-linear-gradient(-65deg, #000000, #ff0000, #000);
+    background: linear-gradient(-65deg, #000000, #ff0000, #000);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+
+  .audio{
+    width: 300px;
+    margin-left: 250px;
+    margin-top: 20px;
+    background: #000000;
+    background: #ff0000;
+    background: -webkit-linear-gradient(-65deg, #000000, #ff0000, #000);
+    background: linear-gradient(-65deg, #000000, #ff0000, #000);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .artist{
+    color: #fff;
+    font-size: .7em;
+    margin-bottom: 16px;
+  }
+  .song{
+    color: #fff;
+    font-size: 2em;
+    margin-bottom: 16px;
+  }
+  .cover-img{
+    margin-top:40px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+   /* BOTTOM */
+   .container-b {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+}
+
+.overlay-b {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 12px;
+  padding: 12px;
+  text-align: right;
+}
+.container-b:hover .overlay-b {
+  opacity:1;
+}
+.btn-like{
+    text-decoration: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 1em;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+    transition: all 0.3 ease-in-out;
+    outline: 0;
+  }
+
+  @media (max-width:1140px) {
+      .bg-song{
+         margin-top:70px;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 30px;
+      }
+
+      .profile-left{
+        text-align: center;
+        margin-bottom: 60px;
+      }
+
+  }
+  @media (max-width: 600px) {
+    .overlay-p {
+      width: 80%;
+    }
+    .btn-like{
+      padding-bottom:5px;
+     }
+    .artist{
+      margin-top:10px;
+      font-size: 1em;
+      text-align:center;
+    }
+    .song{
+      font-size: 1.2em;
+      text-align:center;
+    }
+    .audio{
+      max-width: 100%;
+      margin-left: 15px;
+    }
+    .cover-img{
+      margin-top:100px;
+  }
+}
+
+  @media (max-width:480px) {
+    .artist{
+      font-size: .7em;
+      margin-bottom: 15px;
+      margin-top: 8px;
+      text-align:center;
+    }
+    .song{
+      font-size: 1.2em;
+      text-align:center;
+    }
+    .audio{
+     max-width: 100%;
+    }
+    .cover-img{
+      margin-top:100px;
+       margin-bottom:20px;
+    }
+  }

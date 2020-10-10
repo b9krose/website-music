@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{padding: 0; margin: 0;}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  font-size: 14;
+}
+.bg-profile{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+.profile-img{
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 100%;
+}
+.name-artist{
+  color: #fff;
+  font-size: 5em;
+  margin-bottom: 16px;
+}
+.caption{
+  color: #fff;
+  font-size: 2em;
+  margin-bottom: 16px;
+}
+.btn-like{
+  text-decoration: none;
+      background: #000000;
+    background: #ff0000;
+    background: -webkit-linear-gradient(-65deg, #000000, #ff0000, #000);
+    background: linear-gradient(-65deg, #000000, #ff0000, #000);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 1em;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  transition: all 0.3 ease-in-out;
+  outline: 0;
+}
+
+
+
+
+
+@media (max-width:1140px) {
+    .bg-profile{
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 30px;
+    }
+    .profile-left{
+      text-align: center;
+      margin-bottom: 40px;
+    }
+}
+@media (max-width: 600px) {
+  .name-artist{
+    font-size: 4em;
+  }
+  .caption{
+    font-size: 1.5em;
+  }
+  .btn-like{
+    font-size: 1em;
+  }
+}
+
+@media (max-width:480px) {
+  .name-artist{
+    font-size: 2.5em;
+    margin-bottom: 8px;
+    margin-top: 8px;
+  }
+  .caption{
+    font-size: 1.2em;
+  }
+  .btn-like{
+    font-size: 0.9em;
+  }
+  .profile-img{
+    margin-top:100px;
+  }
+}

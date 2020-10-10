@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil+One&family=Shadows+Into+Light&display=swap');
+body{
+  font-family: 'Arial Black';
+}
+  .bg-project{
+    width:100%;
+    display: flex;
+    justify-content: flex-end;
+    box-shadow: 0  5px 	rgb(134, 121, 121);
+  }
+  .header-p{
+    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Staatliches', cursive;
+    color: #fff;
+    padding-right:40px;
+    font-size: 1.25rem;
+    text-align: right;
+    margin-bottom: 10px;
+    margin-top: 14px;
+}
+.header-p a{
+color: white;
+text-decoration: none;
+}
+.see-more{
+  font-family: 'Shadows Into Light', cursive;
+  font-family: 'Saira Stencil One', cursive;
+  margin-top: 80px;
+  padding-right: 40px;
+  color: #ff0000;
+  text-align: left;
+  writing-mode: vertical-lr;
+}
+.see-more a{
+color: #ff0000;
+text-decoration: none;
+}
+.see-more span {
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+  }
+.see-more span:after {
+position: absolute;
+opacity: 0;
+top: 0;
+right: -20px;
+transition: 0.5s;
+}
+
+.see-more:hover span {
+padding-right: 25px;
+}
+
+.see-more:hover span:after {
+opacity: 1;
+right: 0;
+  }
+
+
+.project{
+  max-width: 200px;
+  border-radius:8px;
+  margin-right:25px;
+  transition: transform .2s;
+}
+
+.project:hover {
+   transform: scale(1.1);
+}
+
+.project-1{
+  padding-top: 1.5rem;
+  padding-bottom: 1.25rem;
+  text-align: center;
+}
+@media (max-width: 700px) {
+  .bg-project{
+    flex-wrap: wrap-reverse;
+  }
+  .header-p{
+    font-size: 1.7rem;
+    text-align: center;
+  }
+  .see-more{
+    display:none;
+  }
+  .project{
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .bg-project{
+    flex-direction: column;
+    align-items: center;
+  }
+  .project{
+    margin: 0;
+    margin-bottom: 25px;
+    width:100%;
+  }
+
+}
+
+@media (max-width: 375px) {
+  .project{
+    max-width: 100%;
+  }
+}
+/* hover img */
+* {box-sizing: border-box;}
+
+.container-p {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+}
+
+.image-p{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay-p {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 12px;
+  padding: 10px;
+  text-align: center;
+}
+
+.container-p:hover .overlay-p {
+  opacity: 1;
+}

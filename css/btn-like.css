@@ -1,0 +1,20 @@
+body{
+    background: #000000;
+}
+.btn-like{
+    text-decoration: none;
+    background: #000000;
+    background: #ff0000;
+    background: -webkit-linear-gradient(-65deg, #000000, #ff0000, #000);
+    background: linear-gradient(-65deg, #000000, #ff0000, #000);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 1em;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+    transition: all 0.3 ease-in-out;
+    outline: 0;
+  }

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/header.css" type="text/css">
+    <link href= "css/form.css" rel="stylesheet" type="text/css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <title> web info music </title>
+  </head>
+  <script>
+  function getFile() {
+    document.getElementById("profile").click();
+  }
+
+  function sub(obj) {
+    var file = obj.value;
+    var fileName = file.split("\\");
+    document.getElementById("yourBtn").innerHTML = fileName[fileName.length - 1];
+    document.myForm.submit();
+    event.preventDefault();
+  }
+
+  $(document).ready(function() {
+    $("#dropdown").click(function() {
+      $("#down").slideToggle();
+    });
+  });
+
+  $( function() {
+    $( "#form" ).tabs();
+  } );
+</script>
+<header>
+    <!-- ======================================================================
+                            TOP BAR
+======================================================================= -->
+<div class="drop">
+  
+  <a onclick="document.getElementById('form').style.display='block'" style="width:auto; color: grey">
+    <i class="fa fa-fw fa-user"></i>/<i class="fa fa-fw fa-user-plus"></i></a>
+   <!---
+  <div class="dropdown">
+    <div class="dropbtn">Hello, user...
+    <i id="dropdown" class="fa fa-caret-down"></i>
+    </div>
+    <div id="down" class="dropdown-content">
+      <a href=""><i class="fa fa-user"></i> My profile </li>
+      <a href=""><i class="fa fa-cog"></i> Settings</li>
+      <a href=""><i class="fa fa-sign-out"></i> Log out </li>
+    </div>
+  </div>
+  -->
+</div>
+<!---
+  <div class="top-icon">
+    <a href="#" title="telegram"><i class="icon fa fa-telegram"></i></a>
+    <a href="#" title="soundcloud"><i class="icon fa fa-soundcloud"></i></a>
+    <a href="#" title="instagram"><i class="icon fa fa-instagram"></i></a>
+    <a href="#" title="youtube"><i class="icon fa fa-youtube"></i></a>
+</div>-->
+
+
+
+  <div class="bg-header"></div>
+
+    <!-- ======================================================================
+                                    NAVBAR HEADER
+======================================================================= -->
+
+
+  <div class="header">
+    <nav class="navbar" >
+      <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle"><i style="color: black;" class="fa fa-bars "></i></label>
+      <a href="#" class="logo">Web info music</a><input type="checkbox" id="chkToggle"></input>
+      <ul class="main-nav" id="js-menu">
+        <li ><a class="nav-links" href="contact"><i class="fa fa-fw fa-envelope"></i> Contact</a></li>
+
+        <li ><a class="nav-links" href="profile"><i class="fa fa-fw fa-music"></i> Archive</a></li>
+        
+        <li ><a class="nav-links" href="home"> <i class="fa fa-fw fa-home"></i>Home</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<body>
+    <!-- ======================================================================
+                            LOGIN & REGISTER FORM
+======================================================================= -->
+
+<div class="modal" id="form">
+  <ul class="tab">
+    <li class="btn btn-black"><a href="#login">Login</a></li>
+    <li class="btn  btn-black rh"><a href="#signup">Signup</a></li>
+  </ul>
+  <form id="login" class="modal-content" action="#" name="login" method="post" >
+    <div class="imgcontainer-modal">
+    <span onclick="document.getElementById('form').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+    <h2 class="title">Login</h2>
+      <div class="container-modal">
+
+        <div class="input-group">
+        <input class="input" type="email" name="Email" placeholder="Enter Email" required></div>
+
+        <div class="input-group">
+        <input class="input" type="password" name="password" placeholder="Enter password" required></div>
+
+        <button class="btn  btn-black" type="submit">Login</button>
+
+    </div>
+
+  </form>
+
+  <form id="signup" class="modal-content" action="#" name="login" method="post" >
+    <div class="imgcontainer-modal">
+    <span onclick="document.getElementById('form').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+    <h2 class="title">Sign-up</h2>
+      <div class="container-modal">
+
+        <center><div class="profile">
+        <div id="yourBtn"  onclick="getFile()">Selcet image For Your Profile</div>
+        <div style='height: 0px;width:0px; overflow:hidden;'>
+        <input id="profile" name="profile" type="file" value="upload"/></div>
+      </div></center>
+
+
+        <div class="input-group">
+        <input class="input" type="text" name="name" placeholder="Enter name" required></div>
+
+        <div class="input-group">
+        <input class="input" type="email" name="Email" placeholder="Enter Email" required></div>
+
+        <div class="input-group">
+        <input class="input" type="password" name="password" placeholder="Enter password" required></div>
+
+        <button class="btn  btn-black" type="submit">signup</button>
+
+    </div>
+
+  </form>
+</div>
+
+<script src="js/modal.js"></script>
+
+
+</body>
+</html>

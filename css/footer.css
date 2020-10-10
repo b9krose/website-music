@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil+One&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lateef&display=swap');
+
+body{
+  background: #000;
+}
+.bg-footer{
+  width:100%;
+  display: flex;
+  bottom: 0;
+  justify-content: center;
+  margin-top:20px;
+}
+
+
+.about{
+ max-width: 250px;
+ border-radius:8px;
+ margin-right:300px;
+ padding-left: 20px;
+ transition: 0.2s ease-in-out;
+ text-align: left;
+ color: #fff;
+}
+.new{
+  max-width: 250px;
+  border-radius:8px;
+  margin-bottom: 80px;
+  transition: 0.2s ease-in-out;
+  color: #fff;
+  text-align: center;
+}
+.new img{
+  margin-top: 8px;
+  width: 100px;
+}
+.footer-text{
+    margin-bottom:10px;
+    justify-content: center;
+    text-align:center;
+    bottom: 0;
+}
+.footer-text h6{
+    font-size:0.9em;
+    color:#fff;
+}
+.contact{
+  max-width: 250px;
+  border-radius:8px;
+  margin-left:300px;
+  padding-right: 20px;
+  transition: 0.2s ease-in-out;
+  text-align: right;
+  color: #fff;
+}
+
+.contact-form{
+  background: pink;
+  position: relative;
+  width: 250px;
+  overflow: hidden;
+  z-index: 10;
+  border-radius: 3px;
+}
+.email-in{
+  width: 100%;
+  border: 0;
+  font-size: 1.2em;
+  background: #eaf1ff;
+  outline: 0;
+  box-sizing: border-box;
+  padding: 10px 40px 10px 10px;
+  color: #2c3d4e;
+}
+.btn-send{
+  width: 100%;
+  position: relative;
+  background: #3a72aa;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 300;
+  position: absolute;
+  padding: 10px 0;
+  left: 87%;
+  border: 0;
+  outline: 0;
+  transition: 0.3s ease-in-out all;
+  font-weight: 500;
+}
+.btn-send:hover{
+  cursor: pointer;
+  background: #4284ca;
+}
+.send-envelope{
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.1s ease-in-out all;
+}
+  .about h1,
+  .new h1, .contact h1{
+  font-family: 'Shadows Into Light', cursive;
+  font-family: 'Staatliches', cursive;
+   font-size: 2.2em;
+   text-decoration: line-through;
+}
+  .about p,
+  .new p, .contact p{
+  font-family: 'Shadows Into Light', cursive;
+  font-family: 'Saira Stencil One', cursive;
+  font-size: 1.2em;
+}
+.footer-text h6{
+   font-family: 'Lateef', cursive;
+}
+#myBtn {
+  float: left;
+  display: none;
+  position: fixed;
+  bottom: 9px;
+  right: 30px;
+  z-index: 99;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  background-color: #ff0000;
+  color: #000;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: rgb(0, 0, 0);
+}
+@media (max-width: 700px) {
+  .bg-footer{
+    flex-wrap: wrap-reverse;
+  }
+   .about,
+   .new, .contact{
+    text-align:center;
+   }
+  .footer-text h6{
+    font-size:0.6em;
+    color:#fff;
+  }
+      .about h1 ,
+      .new h1 , .contact h1{
+     font-size:1.2em;
+   }
+    .about p , .contact p{
+     font-size:0.8em;
+   }
+   .new img{
+    width: 80px;
+}
+}
+@media (max-width: 480px) {
+  .bg-footer{
+    flex-direction: column;
+    align-items: center;
+  }
+  .about,
+   .new, .contact{
+    margin: 0;
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 375px) {
+  .about,
+  .new, .contact{
+    max-width: 100%;
+  }
+}
